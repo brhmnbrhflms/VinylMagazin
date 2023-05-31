@@ -26,6 +26,29 @@ left:566px;
 position:absolute;
 border-radius: 12px;
 }
+
+.vinyl1
+{
+    background-color:#9b9b9b;
+    height:255px;
+    width:200px;
+    border-radius:12px;
+    top:413px;
+    left:666px;
+    position:absolute;
+    z-index:1;
+}
+.vinyl2 
+{
+    background-color: #9b9b9b;
+    height: 255px;
+    width: 200px;
+    border-radius: 12px;
+    top: 413px;
+    left: 700px;
+    position: absolute;
+    z-index: auto;
+}
 .исполнитель
 {
 color:#02081a;

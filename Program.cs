@@ -5,12 +5,12 @@ using System.Data.SqlClient;
 
 var connectionString = "Server=<server-name>;Database=<database-name>;User Id=<user-name>;Password=<password>;";
 
-using (var connection = new SqlConnection(connectionString))
-{
-	connection.Open();
-	// Здесь можно выполнять операции с БД
-	connection.Close();
-}
+//using (var connection = new SqlConnection(connectionString))
+//{
+//	connection.Open();
+//	// Здесь можно выполнять операции с БД
+//	connection.Close();
+//}
 
 
 var builder = WebApplication.CreateBuilder(args);
