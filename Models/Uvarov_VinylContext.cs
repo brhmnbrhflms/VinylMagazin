@@ -16,6 +16,8 @@ namespace Vinyl.Models
         {
         }
 
+        public virtual DbSet<Vinyl> Vinyls { get; set; } = null!;
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -27,6 +29,17 @@ namespace Vinyl.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Vinyl>(entity =>
+            {
+                entity.ToTable("Vinyl");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Genre).HasMaxLength(50);
+
+                entity.Property(e => e.Name).HasMaxLength(50);
+            });
+
             OnModelCreatingPartial(modelBuilder);
         }
 
