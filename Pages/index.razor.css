@@ -20,7 +20,7 @@ border-radius: 12px;
 {
 background-color:#ffffff;
 height:345px;
-width:1148px;
+width:1150px;
 top:367px;
 left:566px;
 position:absolute;
@@ -34,7 +34,7 @@ border-radius: 12px;
     width:200px;
     border-radius:12px;
     top:413px;
-    left:666px;
+    left:636px;
     position:absolute;
     z-index:1;
 }
@@ -45,10 +45,33 @@ border-radius: 12px;
     width: 200px;
     border-radius: 12px;
     top: 413px;
-    left: 700px;
+    left: 906px;
     position: absolute;
-    z-index: auto;
+    z-index: 1;
 }
+
+.vinyl3 {
+    background-color: #9b9b9b;
+    height: 255px;
+    width: 200px;
+    border-radius: 12px;
+    top: 413px;
+    left: 1176px;
+    position: absolute;
+    z-index: 1;
+}
+
+.vinyl4 {
+    background-color: #9b9b9b;
+    height: 255px;
+    width: 200px;
+    border-radius: 12px;
+    top: 413px;
+    left: 1446px;
+    position: absolute;
+    z-index: 1;
+}
+
 .исполнитель
 {
 color:#02081a;
@@ -246,4 +269,9 @@ position:absolute;
     -moz-user-select: none;
     user-select: none;
     pointer-events: none;
+}
+
+#img {
+    width:150px;
+    height:150px;
 }
